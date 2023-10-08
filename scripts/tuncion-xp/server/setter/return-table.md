@@ -7,7 +7,7 @@ description: 🔧 Available since Version 1.0.0!
 {% code title="Table" %}
 ```lua
 {
-    ['newRank'] = true or false, -- Bool
+    ['newRank'] = true or false, -- Was a new rank reached?
     ['rank'] = 5, -- Your current rank
     ['totalXP'] = 350, -- Your total XP
     ['xp'] = 25, -- Your level XP
