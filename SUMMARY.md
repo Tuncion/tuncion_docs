@@ -49,5 +49,5 @@
 
 ***
 
-* [💸 My Store (Viority)](https://discord.gg/323HfHyGW4)
-* [💸 My Store (Dream)](https://discord.gg/zppUXj4JRm)
+* [💸 My Store (Viority)](https://store.viority.eu/)
+* [💸 My Store (Dream)](https://dream-services.tebex.io/)
