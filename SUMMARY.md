@@ -35,6 +35,7 @@
         * [getXP](scripts/tuncion-xp/server/exports/getter/getxp.md)
         * [getNeededXP](scripts/tuncion-xp/server/exports/getter/getneededxp.md)
         * [getRank](scripts/tuncion-xp/server/exports/getter/getrank.md)
+        * [getRankStage](scripts/tuncion-xp/server/exports/getter/getrankstage.md)
         * [getXPLog](scripts/tuncion-xp/server/exports/getter/getxplog.md)
       * [Setter](scripts/tuncion-xp/server/exports/setter/README.md)
         * [📌 Return Table](scripts/tuncion-xp/server/exports/setter/return-table.md)
