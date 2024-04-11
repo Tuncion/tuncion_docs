@@ -1,12 +1,12 @@
 # Table of contents
 
-## 🖐 Welcome
+## 🖐️ Welcome
 
 * [Get Started](README.md)
 
 ## Scripts
 
-* [⚙ Tuncion XP](scripts/tuncion-xp/README.md)
+* [⚙️ Tuncion XP](scripts/tuncion-xp/README.md)
   * [Client](scripts/tuncion-xp/client/README.md)
     * [Events](scripts/tuncion-xp/client/events/README.md)
       * [addXP](scripts/tuncion-xp/client/events/addxp.md)
