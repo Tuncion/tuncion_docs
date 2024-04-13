@@ -77,10 +77,6 @@ Get current Information about a Fraction
 }
 ```
 {% endtab %}
-
-{% tab title="Failed Response" %}
-❌See failed response reference: [#failed-response](routes.md#failed-response "mention")
-{% endtab %}
 {% endtabs %}
 
 
@@ -251,6 +247,7 @@ Get current Information about a Fraction Member
 ```json
 {
     "status": 401,
+    "message": string,
     "links": [
         {
             "docs": string,
@@ -265,6 +262,7 @@ Get current Information about a Fraction Member
 ```json
 {
     "status": 404,
+    "message": string,
     "links": [
         {
             "docs": string,
