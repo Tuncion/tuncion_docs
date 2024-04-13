@@ -370,9 +370,10 @@ Stamp the current fraction member
 {% endtab %}
 
 {% tab title="400" %}
-```
+```json
 {
     "status": 400,
+    "message": string,
     "links": [
         {
             "docs": string,
