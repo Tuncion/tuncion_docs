@@ -6,6 +6,10 @@
 
 ## Scripts
 
+* [⚙️ FiveM Helper API](scripts/fivem-helper-api/README.md)
+  * [📌 How to activate](scripts/fivem-helper-api/how-to-activate.md)
+  * [Failed Response](scripts/fivem-helper-api/failed-response.md)
+  * [Routes](scripts/fivem-helper-api/routes.md)
 * [⚙️ Tuncion XP](scripts/tuncion-xp/README.md)
   * [Client](scripts/tuncion-xp/client/README.md)
     * [Events](scripts/tuncion-xp/client/events/README.md)

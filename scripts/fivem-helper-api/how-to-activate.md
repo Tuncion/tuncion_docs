@@ -1,0 +1,3 @@
+# 📌 How to activate
+
+TODO:
