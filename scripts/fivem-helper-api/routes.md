@@ -331,6 +331,62 @@ Get the last fraction member stamp&#x20;
 
 
 
+### Fraction Member Previous Stamps
+
+<mark style="color:green;">`GET`</mark> `/:fractionid/:discordid/previousStamps`
+
+Get the previous fraction member stamps (Max. 15 Stamps)&#x20;
+
+**Headers**
+
+| Name          | Value              |
+| ------------- | ------------------ |
+| Content-Type  | `application/json` |
+| Authorization | `<APIKey>`         |
+
+**Response**
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "status": 200,
+    "data": [
+        {
+            "id": int,
+            "stampType": string,
+            "stampTime": date (ISO 8601 standard)
+        }
+        ... max 14 other stamps
+    ],
+    "links": [
+        {
+            "docs": string,
+            "support": string
+        }
+    ]
+}
+```
+{% endtab %}
+
+{% tab title="404" %}
+```json
+{
+    "status": 404,
+    "message": string,
+    "links": [
+        {
+            "docs": string,
+            "support": string
+        }
+    ]
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
 ### Fraction Member Stamp
 
 <mark style="color:yellow;">`POST`</mark> `/:fractionid/:discordid/stamp`
