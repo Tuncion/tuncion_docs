@@ -465,9 +465,7 @@ Get the last fraction member holiday
         "isActive": boolean,
         "holidayStartDate": date (ISO 8601 standard),
         "holidayEndDate": date (ISO 8601 standard),
-        "holidayReason": string,
-        "last_update": date (ISO 8601 standard),
-        "created_at": date (ISO 8601 standard)
+        "holidayReason": string
     },
     "links": [
         {
@@ -494,6 +492,4 @@ Get the last fraction member holiday
 ```
 {% endtab %}
 {% endtabs %}
-
-
 
