@@ -191,6 +191,90 @@ Update the current fraction logo
 
 ## 🤖 Fraction Member
 
+### Fraction Member Add
+
+<mark style="color:yellow;">`POST`</mark> `/:fractionid/:discordid/addMember`
+
+Add a Fraction Member
+
+**Headers**
+
+<table><thead><tr><th width="353">Name</th><th>Value</th></tr></thead><tbody><tr><td>Content-Type</td><td><code>application/json</code></td></tr><tr><td>Authorization</td><td><code>&#x3C;APIKey></code></td></tr></tbody></table>
+
+**Body**
+
+<table><thead><tr><th width="353">Name</th><th>Value</th></tr></thead><tbody><tr><td>FirstName</td><td><code>String</code></td></tr><tr><td>LastName</td><td><code>String</code></td></tr></tbody></table>
+
+**Response**
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "status": 200,
+    "links": [
+        {
+            "docs": string,
+            "support": string
+        }
+    ]
+}
+```
+{% endtab %}
+
+{% tab title="400" %}
+```json
+{
+    "status": 400,
+    "message": string,
+    "links": [
+        {
+            "docs": string,
+            "support": string
+        }
+    ]
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### Fraction Member Kick
+
+<mark style="color:purple;">`PUT`</mark> `/:fractionid/:discordid/kickMember`
+
+Kick a Fraction Member
+
+**Headers**
+
+| Name          | Value              |
+| ------------- | ------------------ |
+| Content-Type  | `application/json` |
+| Authorization | `<APIKey>`         |
+
+**Body**
+
+| Name       | Value    |
+| ---------- | -------- |
+| KickedById | `String` |
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "status": 200,
+    "links": [
+        {
+            "docs": string,
+            "support": string
+        }
+    ]
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
 ### Fraction Member Info
 
 <mark style="color:green;">`GET`</mark> `/:fractionid/:discordid/info`
@@ -493,3 +577,105 @@ Get the last fraction member holiday
 {% endtab %}
 {% endtabs %}
 
+
+
+### Fraction Member Previous Holidays
+
+<mark style="color:green;">`GET`</mark> `/:fractionid/:discordid/previousHolidays`
+
+Get the previous fraction member holiday (Max. 15 Stamps)&#x20;
+
+**Headers**
+
+<table><thead><tr><th width="368">Name</th><th>Value</th></tr></thead><tbody><tr><td>Content-Type</td><td><code>application/json</code></td></tr><tr><td>Authorization</td><td><code>&#x3C;APIKey></code></td></tr></tbody></table>
+
+**Response**
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "status": 200,
+    "data": [
+        {
+            "isActive": boolean,
+            "holidayStartDate": date (ISO 8601 standard),
+            "holidayEndDate": date (ISO 8601 standard),
+            "holidayReason": string
+        }
+        ... max 14 other holidays
+    ],
+    "links": [
+        {
+            "docs": string,
+            "support": string
+        }
+    ]
+}
+```
+{% endtab %}
+
+{% tab title="404" %}
+```json
+{
+    "status": 404,
+    "message": string,
+    "links": [
+        {
+            "docs": string,
+            "support": string
+        }
+    ]
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+### Fraction Member Request Holiday
+
+<mark style="color:yellow;">`POST`</mark> `/:fractionid/:discordid/requestHoliday`
+
+Request a holiday for the current fraction member
+
+**Headers**
+
+<table><thead><tr><th width="362">Name</th><th>Value</th></tr></thead><tbody><tr><td>Content-Type</td><td><code>application/json</code></td></tr><tr><td>Authorization</td><td><code>&#x3C;APIKey></code></td></tr></tbody></table>
+
+**Body**
+
+<table><thead><tr><th width="362">Name</th><th>Value</th></tr></thead><tbody><tr><td>StartDate</td><td><code>Date (ISO 8601 Standard)</code></td></tr><tr><td>EndDate</td><td><code>Date (ISO 8601 Standard)</code></td></tr><tr><td>Reason</td><td><code>String</code></td></tr></tbody></table>
+
+**Response**
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "status": 200,
+    "links": [
+        {
+            "docs": string,
+            "support": string
+        }
+    ]
+}
+```
+{% endtab %}
+
+{% tab title="400" %}
+```json
+{
+    "status": 400,
+    "message": string,
+    "links": [
+        {
+            "docs": string,
+            "support": string
+        }
+    ]
+}
+```
+{% endtab %}
+{% endtabs %}
