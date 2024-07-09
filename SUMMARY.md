@@ -51,6 +51,8 @@
         * [setRank](scripts/tuncion-xp/server/exports/setter/setrank.md)
         * [resetPlayer](scripts/tuncion-xp/server/exports/setter/resetplayer.md)
         * [resetPlayerXP](scripts/tuncion-xp/server/exports/setter/resetplayerxp.md)
+* [⚙️ VSCode FiveM Pack](scripts/vscode-fivem-pack/README.md)
+  * [Installation](scripts/vscode-fivem-pack/installation.md)
 
 ***
 
