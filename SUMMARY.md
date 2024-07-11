@@ -53,6 +53,7 @@
         * [resetPlayerXP](scripts/tuncion-xp/server/exports/setter/resetplayerxp.md)
 * [⚙️ VSCode FiveM Pack](scripts/vscode-fivem-pack/README.md)
   * [Installation](scripts/vscode-fivem-pack/installation.md)
+  * [Usage](scripts/vscode-fivem-pack/usage.md)
 
 ***
 
