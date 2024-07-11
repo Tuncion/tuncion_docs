@@ -63,7 +63,7 @@ Note that these are not all the features that my extension package has added! Th
 
 1. Right-click in the file bar
 2. Select `Generate FiveM resource`\
-   ![](<../../.gitbook/assets/Bildschirmfoto 2024-07-11 um 09.27.18.png>)
+   <img src="../../.gitbook/assets/Bildschirmfoto 2024-07-11 um 09.27.18.png" alt="" data-size="line">
 3. Follow the setup\
    ![](<../../.gitbook/assets/Monosnap screencast 2024-07-11 10-43-14.gif>)
 4. 🎉 You have created a new script!\
