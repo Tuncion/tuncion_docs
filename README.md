@@ -1,33 +1,41 @@
----
-coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
+# Website
 
-# Get Started
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-Hello everyone this is the official docs for all tuncion scripts
+## Installation
 
-⚙️ Github: [https://github.com/Tuncion](https://github.com/Tuncion)\
-⚙️ Fiverr: [https://de.fiverr.com/tuncion](https://de.fiverr.com/tuncion)\
-⚙️ Discord: tuncion
-
-```
-// ❤️ Love to code for you
+```bash
+yarn
 ```
 
-{% hint style="success" %}
-Feel free to contact me 📢 Looking forward to your message
-{% endhint %}
+## Local Development
+
+```bash
+yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```bash
+yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

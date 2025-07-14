@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://docs.dream-services.eu/sitemap.xml

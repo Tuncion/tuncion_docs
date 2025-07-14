@@ -1,0 +1,75 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #ff2b61;
+  --ifm-color-primary-dark: #e52658;
+  --ifm-color-primary-darker: #cc204e;
+  --ifm-color-primary-darkest: #a81a41;
+  --ifm-color-primary-light: #ff4979;
+  --ifm-color-primary-lighter: #ff6a91;
+  --ifm-color-primary-lightest: #ff8fac;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #ff2b61;
+  --ifm-color-primary-dark: #e52658;
+  --ifm-color-primary-darker: #cc204e;
+  --ifm-color-primary-darkest: #a81a41;
+  --ifm-color-primary-light: #ff4979;
+  --ifm-color-primary-lighter: #ff6a91;
+  --ifm-color-primary-lightest: #ff8fac;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* Nav */
+  --ifm-navbar-background-color: #161616;
+  --ifm-background-color: #161616;
+  --ifm-toc-border-color: rgba(255, 255, 255, 0.1);
+
+  /* FAQ */
+  --ifm-color-info-contrast-background: #0f0f0f;
+  --ifm-color-info-dark: rgba(255, 255, 255, 0.1);
+
+  summary {
+    color: #BBB;
+  }
+
+  summary:hover {
+    color: #FFF;
+  }
+}
+
+.navbar {
+  border-bottom: rgba(255, 255, 255, 0.1) solid 1px;
+}
+
+.api-get {
+  color: #4CAF50 !important;
+}
+
+.api-post {
+  color: #C9BB77 !important;
+}
+
+.api-patch {
+  color: #A855F1 !important;
+}
+
+.api-put {
+  color: #A855F1 !important;
+}
+
+.color-blue {
+  color:#3B82F6 !important;
+}
+
+.color-orange {
+  color:#F97316 !important;
+}
