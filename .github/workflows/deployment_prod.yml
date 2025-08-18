@@ -1,0 +1,51 @@
+name: deploy-on-prod
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      update_type:
+        description: "Environment to deploy to"
+        required: true
+        type: choice
+        options:
+          - Production
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Copy files to server via SSH
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          source: "."
+          target: "/home/Tuncion/tuncion_docs_deployment_temp"
+
+      - name: Run deploy script via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
+            rm -rf /home/Tuncion/tuncion_docs
+            mv /home/Tuncion/tuncion_docs_deployment_temp /home/Tuncion/tuncion_docs
+            cd /home/Tuncion/tuncion_docs
+            npm install
+            npm run build
+            pm2 delete "Tuncion Docs"
+            pm2 start npm --name "Tuncion Docs" -- run serve -- -p 1353
