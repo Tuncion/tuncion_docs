@@ -45,6 +45,7 @@ jobs:
             rm -rf /home/Tuncion/tuncion_docs
             mv /home/Tuncion/tuncion_docs_deployment_temp /home/Tuncion/tuncion_docs
             cd /home/Tuncion/tuncion_docs
+            git config --global --add safe.directory /home/Tuncion/tuncion_docs
             npm install
             npm run build
             pm2 delete "Tuncion Docs"
